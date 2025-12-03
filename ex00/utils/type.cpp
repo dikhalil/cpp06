@@ -6,7 +6,7 @@
 /*   By: dikhalil <dikhalil@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 18:59:18 by dikhalil          #+#    #+#             */
-/*   Updated: 2025/11/15 21:33:12 by dikhalil         ###   ########.fr       */
+/*   Updated: 2025/12/03 15:39:58 by dikhalil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ bool isFloat(const std::string &s)
 
     if (s == "nanf" || s == "+inff" || s == "-inff")
         return (true);
-     if (s[s.length() - 1] != 'f')  
+    if (s[s.length() - 1] != 'f')  
         return (false);
     ss >> f;
     return (!ss.fail() && ss.eof());

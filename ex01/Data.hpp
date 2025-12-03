@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Data.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dikhalil <dikhalil@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/16 18:17:26 by dikhalil          #+#    #+#             */
-/*   Updated: 2025/12/03 16:27:25 by dikhalil         ###   ########.fr       */
+/*   Created: 2025/11/16 16:20:57 by dikhalil          #+#    #+#             */
+/*   Updated: 2025/12/03 16:14:23 by dikhalil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "identify.hpp"
+#ifndef DATA_HPP
+#define DATA_HPP
 
-int main(void)
+#include <string>
+
+struct Data
 {
-    Base *base;
-    Base *child;
-    
-    base = new Base();
-    child = generate();
-    identify(base);
-    identify(*base);
-    identify(child);
-    identify(*child);
-    delete (child);
-    delete(base);
-    return (0);
-}
+    int id;
+    std::string name;
+};
+
+#endif

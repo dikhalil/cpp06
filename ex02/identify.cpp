@@ -6,7 +6,7 @@
 /*   By: dikhalil <dikhalil@student.42amman.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/16 17:25:07 by dikhalil          #+#    #+#             */
-/*   Updated: 2025/11/16 18:30:42 by dikhalil         ###   ########.fr       */
+/*   Updated: 2025/12/03 16:33:31 by dikhalil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,5 +72,5 @@ void identify(Base& p)
         return ;
     }
     catch(...) {}
-    std::cout << "Unknown\n";
+    std::cout << "UNKNOWN\n";
 }
